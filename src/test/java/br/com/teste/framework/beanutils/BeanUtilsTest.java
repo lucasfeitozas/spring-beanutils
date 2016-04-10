@@ -33,7 +33,9 @@ public class BeanUtilsTest {
 		BeanUtils.copyProperties(agenda, agendaDTO);;
 		
 		System.out.println(agendaDTO);
-		Assert.assertTrue(true);
+		Assert.assertTrue(agendaDTO.getNome().equals(agenda.getNome()));
+		Assert.assertTrue(agendaDTO.getValor().equals(agenda.getValor()));
+		Assert.assertTrue(agendaDTO.getVersao().equals(agenda.getVersao()));
 	}
 	
 	/**
@@ -54,7 +56,8 @@ public class BeanUtilsTest {
 		BarcoDTO barcoDTO = new BarcoDTO();
 		BeanUtils.copyProperties(barco, barcoDTO);
 		System.out.println(barcoDTO);
-		Assert.assertTrue(true);
+		
+		Assert.assertTrue(barco.getNome().equals(barcoDTO.getNome()));
 	}
 	
 	/**
@@ -64,8 +67,8 @@ public class BeanUtilsTest {
 	 */
 	@Test
 	public void beanUtilsTest003() {
-		Pessoa marido = new Pessoa("abc", 10, null);
-		Pessoa esposa = new Pessoa("maria", 10, null);
+		Pessoa marido = new Pessoa("João", 10, null);
+		Pessoa esposa = new Pessoa("Maria", 10, null);
 		marido.setConjuge(esposa);
 		esposa.setConjuge(marido);
 
@@ -77,8 +80,10 @@ public class BeanUtilsTest {
 		
 		maridoDTO.setConjuge(esposaDTO);
 		esposaDTO.setConjuge(maridoDTO);
+
 		System.out.println(maridoDTO);
 		System.out.println(esposaDTO);
+		Assert.assertTrue(maridoDTO.getNome().equals(marido.getNome()));
 //		final PropertyDescriptor[] propertyDescriptors = BeanUtils.getPropertyDescriptors(p.getClass());
 //
 //		PessoaDTO pessoaDTO = new PessoaDTO();
