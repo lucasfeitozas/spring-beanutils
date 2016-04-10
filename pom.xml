@@ -12,26 +12,10 @@
 
 	<developers>
 		<developer>
-			<name>Rayfran Rocha Lima</name>
-			<email>rayfran.rocha.lima@gmail.com</email>
-			<roles>
-				<role>Arquiteto Java EE</role>
-				<role>Analista de Sistemas</role>
-				<role>Programador Java</role>
-			</roles>
-		</developer>
-		<developer>
 			<name>Lucas Feitozas</name>
 			<email>lucasfeitozas@gmail.com</email>
 			<roles>
-				<role>Programador Java</role>
-			</roles>
-		</developer>
-		<developer>
-			<name>Thayan de Souza</name>
-			<email>thayan_18@hotmail.com</email>
-			<roles>
-				<role>Programador Java</role>
+				<role>Software Development Analyst</role>
 			</roles>
 		</developer>
 	</developers>
