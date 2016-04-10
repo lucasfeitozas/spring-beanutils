@@ -1,13 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.icon</groupId>
-	<artifactId>icon-deps</artifactId>
+	<groupId>br.com.teste.framework</groupId>
+	<artifactId>spring-beanutils</artifactId>
 	<version>1.0</version>
 
 	<organization>
 		<name>Lucas Feitozas</name>
-		<url>www.iconsolucoes.com</url>
+		<url>https://www.linkedin.com/in/lucas-feitozas-60594324</url>
 	</organization>
 
 	<developers>
