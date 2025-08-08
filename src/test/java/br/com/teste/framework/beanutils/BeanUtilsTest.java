@@ -48,10 +48,10 @@ public class BeanUtilsTest {
 		List<Passageiro> listaPassageiro = new ArrayList<>();
 		listaPassageiro.add( new Passageiro("Antonio Silva", 20, EnumTipoDocumento.CPF));
 		listaPassageiro.add( new Passageiro("Maria do Carmo", 18, EnumTipoDocumento.RG));
-		listaPassageiro.add( new Passageiro("José da Costa", 30, EnumTipoDocumento.CPF));
+		listaPassageiro.add( new Passageiro("Josï¿½ da Costa", 30, EnumTipoDocumento.CPF));
 		listaPassageiro.add( new Passageiro("Gorete de Almeida", 24, EnumTipoDocumento.RG));
 		
-		Barco barco = new Barco(1, "Capitão América", 200, listaPassageiro);
+		Barco barco = new Barco(1, "Capitï¿½o Amï¿½rica", 200, listaPassageiro);
 		
 		BarcoDTO barcoDTO = new BarcoDTO();
 		BeanUtils.copyProperties(barco, barcoDTO);
@@ -67,7 +67,7 @@ public class BeanUtilsTest {
 	 */
 	@Test
 	public void beanUtilsTest003() {
-		Pessoa marido = new Pessoa("João", 10, null);
+		Pessoa marido = new Pessoa("Joao", 10, null);
 		Pessoa esposa = new Pessoa("Maria", 10, null);
 		marido.setConjuge(esposa);
 		esposa.setConjuge(marido);
